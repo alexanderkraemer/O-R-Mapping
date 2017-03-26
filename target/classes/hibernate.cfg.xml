@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!-- DERBY network server properties -->
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/swk</property>
+
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">password</property>
+
+        <property name="hibernate.hbm2ddl.auto">create</property>
+        <property name="hibernate.show_sql">false</property>
+        <property name="hibernate.format_sql">true</property>
+        <property name="hibernate.current_session_context_class">
+        	thread
+        </property>
+        
+        <mapping class="swt6.orm.domain.Employee" />
+        <mapping class="swt6.orm.domain.LogbookEntry" />
+        <mapping class="swt6.orm.domain.Address" />
+        <mapping class="swt6.orm.domain.PermanentEmployee" />
+        <mapping class="swt6.orm.domain.TemporaryEmployee" />
+        <mapping class="swt6.orm.domain.Project" />
+        <mapping class="swt6.orm.domain.Issue" />
+        <mapping class="swt6.orm.domain.Module" />
+        <mapping class="swt6.orm.domain.Phase" />
+    </session-factory>
+</hibernate-configuration>

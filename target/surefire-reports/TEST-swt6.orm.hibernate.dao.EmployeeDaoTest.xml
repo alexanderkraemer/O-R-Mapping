@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="9" failures="2" name="swt6.orm.hibernate.dao.EmployeeDaoTest" time="0.361" errors="2" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.121-b13"/>
+    <property name="user.country.format" value="AT"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/Alexander/Downloads/orm-issues"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/Alexander/Downloads/orm-issues"/>
+    <property name="java.runtime.version" value="1.8.0_121-b13"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/8m/ltbl8rd922l8b6nnfjrxgwvr0000gn/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/usr/local/Cellar/maven/3.3.9/libexec/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/Alexander/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.12.3"/>
+    <property name="user.home" value="/Users/Alexander"/>
+    <property name="user.timezone" value="Europe/Vienna"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="Alexander"/>
+    <property name="java.class.path" value="/usr/local/Cellar/maven/3.3.9/libexec/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_121"/>
+    <property name="java.ext.dirs" value="/Users/Alexander/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/local/Cellar/maven/3.3.9/libexec"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="swt6.orm.hibernate.dao.EmployeeDaoTest" name="testRemoveProject" time="0.278"/>
+  <testcase classname="swt6.orm.hibernate.dao.EmployeeDaoTest" name="delete" time="0.03"/>
+  <testcase classname="swt6.orm.hibernate.dao.EmployeeDaoTest" name="getAll" time="0.015"/>
+  <testcase classname="swt6.orm.hibernate.dao.EmployeeDaoTest" name="insert" time="0.008"/>
+  <testcase classname="swt6.orm.hibernate.dao.EmployeeDaoTest" name="update" time="0.006"/>
+  <testcase classname="swt6.orm.hibernate.dao.EmployeeDaoTest" name="findById" time="0.014">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertNotNull(Assert.java:712)
+	at org.junit.Assert.assertNotNull(Assert.java:722)
+	at swt6.orm.hibernate.dao.EmployeeDaoTest.findById(EmployeeDaoTest.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</failure>
+    <system-out>Hibernate: 
+    select
+        employee0_.id as id1_1_0_,
+        employee0_.address_street as address_5_1_0_,
+        employee0_.address_zipCode as address_6_1_0_,
+        employee0_.dateOfBirth as dateOfBi2_1_0_,
+        employee0_.firstName as firstNam3_1_0_,
+        employee0_.lastName as lastName4_1_0_,
+        employee0_1_.salary as salary1_5_0_,
+        employee0_2_.endDate as endDate1_9_0_,
+        employee0_2_.hourlyRate as hourlyRa2_9_0_,
+        employee0_2_.renter as renter3_9_0_,
+        employee0_2_.startDate as startDat4_9_0_,
+        case 
+            when employee0_1_.id is not null then 1 
+            when employee0_2_.id is not null then 2 
+            when employee0_.id is not null then 0 
+            else -1 
+        end as clazz_0_,
+        address1_.street as street1_0_1_,
+        address1_.zipCode as zipCode2_0_1_,
+        address1_.city as city3_0_1_ 
+    from
+        Employee employee0_ 
+    left outer join
+        PermanentEmployee employee0_1_ 
+            on employee0_.id=employee0_1_.id 
+    left outer join
+        TemporaryEmployee employee0_2_ 
+            on employee0_.id=employee0_2_.id 
+    left outer join
+        Address address1_ 
+            on employee0_.address_street=address1_.street 
+            and employee0_.address_zipCode=address1_.zipCode 
+    where
+        employee0_.id=?
+Hibernate: 
+    
+values
+    next value for hibernate_sequence
+Hibernate: 
+    select
+        employee0_.id as id1_1_0_,
+        employee0_.address_street as address_5_1_0_,
+        employee0_.address_zipCode as address_6_1_0_,
+        employee0_.dateOfBirth as dateOfBi2_1_0_,
+        employee0_.firstName as firstNam3_1_0_,
+        employee0_.lastName as lastName4_1_0_,
+        employee0_1_.salary as salary1_5_0_,
+        employee0_2_.endDate as endDate1_9_0_,
+        employee0_2_.hourlyRate as hourlyRa2_9_0_,
+        employee0_2_.renter as renter3_9_0_,
+        employee0_2_.startDate as startDat4_9_0_,
+        case 
+            when employee0_1_.id is not null then 1 
+            when employee0_2_.id is not null then 2 
+            when employee0_.id is not null then 0 
+            else -1 
+        end as clazz_0_,
+        address1_.street as street1_0_1_,
+        address1_.zipCode as zipCode2_0_1_,
+        address1_.city as city3_0_1_ 
+    from
+        Employee employee0_ 
+    left outer join
+        PermanentEmployee employee0_1_ 
+            on employee0_.id=employee0_1_.id 
+    left outer join
+        TemporaryEmployee employee0_2_ 
+            on employee0_.id=employee0_2_.id 
+    left outer join
+        Address address1_ 
+            on employee0_.address_street=address1_.street 
+            and employee0_.address_zipCode=address1_.zipCode 
+    where
+        employee0_.id=?
+</system-out>
+  </testcase>
+  <testcase classname="swt6.orm.hibernate.dao.EmployeeDaoTest" name="addLogbookEntries" time="0.002">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertNotNull(Assert.java:712)
+	at org.junit.Assert.assertNotNull(Assert.java:722)
+	at swt6.orm.hibernate.dao.EmployeeDaoTest.addLogbookEntries(EmployeeDaoTest.java:102)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</failure>
+    <system-out>Hibernate: 
+    
+values
+    next value for hibernate_sequence
+Hibernate: 
+    select
+        employee0_.id as id1_1_0_,
+        employee0_.address_street as address_5_1_0_,
+        employee0_.address_zipCode as address_6_1_0_,
+        employee0_.dateOfBirth as dateOfBi2_1_0_,
+        employee0_.firstName as firstNam3_1_0_,
+        employee0_.lastName as lastName4_1_0_,
+        employee0_1_.salary as salary1_5_0_,
+        employee0_2_.endDate as endDate1_9_0_,
+        employee0_2_.hourlyRate as hourlyRa2_9_0_,
+        employee0_2_.renter as renter3_9_0_,
+        employee0_2_.startDate as startDat4_9_0_,
+        case 
+            when employee0_1_.id is not null then 1 
+            when employee0_2_.id is not null then 2 
+            when employee0_.id is not null then 0 
+            else -1 
+        end as clazz_0_,
+        address1_.street as street1_0_1_,
+        address1_.zipCode as zipCode2_0_1_,
+        address1_.city as city3_0_1_ 
+    from
+        Employee employee0_ 
+    left outer join
+        PermanentEmployee employee0_1_ 
+            on employee0_.id=employee0_1_.id 
+    left outer join
+        TemporaryEmployee employee0_2_ 
+            on employee0_.id=employee0_2_.id 
+    left outer join
+        Address address1_ 
+            on employee0_.address_street=address1_.street 
+            and employee0_.address_zipCode=address1_.zipCode 
+    where
+        employee0_.id=?
+</system-out>
+  </testcase>
+  <testcase classname="swt6.orm.hibernate.dao.EmployeeDaoTest" name="removeLogbookEntry" time="0.004">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at swt6.orm.hibernate.dao.EmployeeDaoTest.removeLogbookEntry(EmployeeDaoTest.java:126)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-out>Hibernate: 
+    
+values
+    next value for hibernate_sequence
+Hibernate: 
+    select
+        employee0_.id as id1_1_0_,
+        employee0_.address_street as address_5_1_0_,
+        employee0_.address_zipCode as address_6_1_0_,
+        employee0_.dateOfBirth as dateOfBi2_1_0_,
+        employee0_.firstName as firstNam3_1_0_,
+        employee0_.lastName as lastName4_1_0_,
+        employee0_1_.salary as salary1_5_0_,
+        employee0_2_.endDate as endDate1_9_0_,
+        employee0_2_.hourlyRate as hourlyRa2_9_0_,
+        employee0_2_.renter as renter3_9_0_,
+        employee0_2_.startDate as startDat4_9_0_,
+        case 
+            when employee0_1_.id is not null then 1 
+            when employee0_2_.id is not null then 2 
+            when employee0_.id is not null then 0 
+            else -1 
+        end as clazz_0_,
+        address1_.street as street1_0_1_,
+        address1_.zipCode as zipCode2_0_1_,
+        address1_.city as city3_0_1_ 
+    from
+        Employee employee0_ 
+    left outer join
+        PermanentEmployee employee0_1_ 
+            on employee0_.id=employee0_1_.id 
+    left outer join
+        TemporaryEmployee employee0_2_ 
+            on employee0_.id=employee0_2_.id 
+    left outer join
+        Address address1_ 
+            on employee0_.address_street=address1_.street 
+            and employee0_.address_zipCode=address1_.zipCode 
+    where
+        employee0_.id=?
+</system-out>
+  </testcase>
+  <testcase classname="swt6.orm.hibernate.dao.EmployeeDaoTest" name="testAddProject" time="0.004">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at swt6.orm.hibernate.dao.EmployeeDaoTest.testAddProject(EmployeeDaoTest.java:139)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-out>Hibernate: 
+    
+values
+    next value for hibernate_sequence
+Hibernate: 
+    select
+        employee0_.id as id1_1_0_,
+        employee0_.address_street as address_5_1_0_,
+        employee0_.address_zipCode as address_6_1_0_,
+        employee0_.dateOfBirth as dateOfBi2_1_0_,
+        employee0_.firstName as firstNam3_1_0_,
+        employee0_.lastName as lastName4_1_0_,
+        employee0_1_.salary as salary1_5_0_,
+        employee0_2_.endDate as endDate1_9_0_,
+        employee0_2_.hourlyRate as hourlyRa2_9_0_,
+        employee0_2_.renter as renter3_9_0_,
+        employee0_2_.startDate as startDat4_9_0_,
+        case 
+            when employee0_1_.id is not null then 1 
+            when employee0_2_.id is not null then 2 
+            when employee0_.id is not null then 0 
+            else -1 
+        end as clazz_0_,
+        address1_.street as street1_0_1_,
+        address1_.zipCode as zipCode2_0_1_,
+        address1_.city as city3_0_1_ 
+    from
+        Employee employee0_ 
+    left outer join
+        PermanentEmployee employee0_1_ 
+            on employee0_.id=employee0_1_.id 
+    left outer join
+        TemporaryEmployee employee0_2_ 
+            on employee0_.id=employee0_2_.id 
+    left outer join
+        Address address1_ 
+            on employee0_.address_street=address1_.street 
+            and employee0_.address_zipCode=address1_.zipCode 
+    where
+        employee0_.id=?
+</system-out>
+  </testcase>
+</testsuite>
