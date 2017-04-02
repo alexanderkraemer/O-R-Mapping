@@ -5,12 +5,34 @@
 <hibernate-configuration>
     <session-factory>
         <!-- DERBY network server properties -->
+        <!--
+        ============= USING MYSQL DATABASE =============
         <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
         <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/swk</property>
 
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
         <property name="connection.username">root</property>
         <property name="connection.password">password</property>
+        -->
+
+        <!--
+        ============= USING IN MEMORY DATABASE =============
+        <property name="hibernate.connection.driver_class">org.apache.derby.jdbc.EmbeddedDriver</property>
+        <property name="hibernate.connection.url">jdbc:derby:memory://localhost/WorkLogDb;create=true</property>
+
+        <property name="hibernate.dialect">org.hibernate.dialect.DerbyTenSevenDialect</property>
+        <property name="connection.username">user</property>
+        <property name="connection.password">user</property>
+        -->
+
+        <!-- ============= USING PERSISTENT DATABASE ============= -->
+        <property name="hibernate.connection.driver_class">org.apache.derby.jdbc.ClientDriver</property>
+        <property name="hibernate.connection.url">jdbc:derby://localhost/WorkLogDb;create=true</property>
+
+        <property name="hibernate.dialect">org.hibernate.dialect.DerbyTenSevenDialect</property>
+        <property name="connection.username">user</property>
+        <property name="connection.password">user</property>
+
 
         <property name="hibernate.hbm2ddl.auto">create</property>
         <property name="hibernate.show_sql">false</property>

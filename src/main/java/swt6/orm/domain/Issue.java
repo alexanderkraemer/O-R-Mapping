@@ -1,8 +1,5 @@
 package swt6.orm.domain;
 
-import com.sun.istack.internal.NotNull;
-import com.sun.istack.internal.Nullable;
-
 import javax.persistence.*;
 import java.io.Serializable;
 import java.sql.Time;
@@ -22,12 +19,10 @@ public class Issue implements Serializable{
     @Enumerated(EnumType.ORDINAL)
     private Priority priority;
 
-    @Nullable
     private Time estimatedTime;
 
     private double finished;
 
-    @Nullable
     @ManyToOne(cascade = CascadeType.ALL)
     private Employee employee;
 

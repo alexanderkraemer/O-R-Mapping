@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="swt6.orm.hibernate.dao.AddressDaoTest" time="1.889" errors="0" skipped="0">
+<testsuite tests="5" failures="0" name="swt6.orm.hibernate.dao.AddressDaoTest" time="2.531" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib"/>
@@ -7,7 +7,7 @@
     <property name="user.country.format" value="AT"/>
     <property name="gopherProxySet" value="false"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="/Users/Alexander/Downloads/orm-issues"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/Alexander/Documents/CloudStation/FH/6. Semester/SWT/Übung/Hausübungen/UE2"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/Alexander/Downloads/orm-issues"/>
+    <property name="user.dir" value="/Users/Alexander/Documents/CloudStation/FH/6. Semester/SWT/Übung/Hausübungen/UE2"/>
     <property name="java.runtime.version" value="1.8.0_121-b13"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/endorsed"/>
@@ -60,8 +60,9 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="swt6.orm.hibernate.dao.AddressDaoTest" name="delete" time="1.874"/>
-  <testcase classname="swt6.orm.hibernate.dao.AddressDaoTest" name="insert" time="0.005"/>
-  <testcase classname="swt6.orm.hibernate.dao.AddressDaoTest" name="update" time="0.008"/>
-  <testcase classname="swt6.orm.hibernate.dao.AddressDaoTest" name="findById" time="0.002"/>
+  <testcase classname="swt6.orm.hibernate.dao.AddressDaoTest" name="delete" time="2.477"/>
+  <testcase classname="swt6.orm.hibernate.dao.AddressDaoTest" name="getAll" time="0.02"/>
+  <testcase classname="swt6.orm.hibernate.dao.AddressDaoTest" name="insert" time="0.01"/>
+  <testcase classname="swt6.orm.hibernate.dao.AddressDaoTest" name="update" time="0.021"/>
+  <testcase classname="swt6.orm.hibernate.dao.AddressDaoTest" name="findById" time="0.003"/>
 </testsuite>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="9" failures="0" name="swt6.orm.hibernate.dao.EmployeeDaoTest" time="0.673" errors="0" skipped="0">
+<testsuite tests="6" failures="0" name="swt6.orm.hibernate.dao.StatisticDaoTest" time="0.768" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib"/>
@@ -60,13 +60,10 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="swt6.orm.hibernate.dao.EmployeeDaoTest" name="testRemoveProject" time="0.584"/>
-  <testcase classname="swt6.orm.hibernate.dao.EmployeeDaoTest" name="delete" time="0.044"/>
-  <testcase classname="swt6.orm.hibernate.dao.EmployeeDaoTest" name="getAll" time="0.014"/>
-  <testcase classname="swt6.orm.hibernate.dao.EmployeeDaoTest" name="insert" time="0.009"/>
-  <testcase classname="swt6.orm.hibernate.dao.EmployeeDaoTest" name="update" time="0.009"/>
-  <testcase classname="swt6.orm.hibernate.dao.EmployeeDaoTest" name="findById" time="0.002"/>
-  <testcase classname="swt6.orm.hibernate.dao.EmployeeDaoTest" name="addLogbookEntries" time="0.004"/>
-  <testcase classname="swt6.orm.hibernate.dao.EmployeeDaoTest" name="removeLogbookEntry" time="0.003"/>
-  <testcase classname="swt6.orm.hibernate.dao.EmployeeDaoTest" name="testAddProject" time="0.004"/>
+  <testcase classname="swt6.orm.hibernate.dao.StatisticDaoTest" name="neededTimePerEmployee" time="0.628"/>
+  <testcase classname="swt6.orm.hibernate.dao.StatisticDaoTest" name="getTimeByPhases" time="0.069"/>
+  <testcase classname="swt6.orm.hibernate.dao.StatisticDaoTest" name="getIssuesForEmployee" time="0.018"/>
+  <testcase classname="swt6.orm.hibernate.dao.StatisticDaoTest" name="neededTimeSum" time="0.021"/>
+  <testcase classname="swt6.orm.hibernate.dao.StatisticDaoTest" name="getIssueTimeForEmployee" time="0.015"/>
+  <testcase classname="swt6.orm.hibernate.dao.StatisticDaoTest" name="getIssuesWithState" time="0.017"/>
 </testsuite>
